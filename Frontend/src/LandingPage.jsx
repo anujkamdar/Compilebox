@@ -182,11 +182,6 @@ export default function LandingPage() {
           <div className="w-7 h-7 rounded-md flex items-center justify-center text-sm font-bold" style={{ background: "#00ff88", color: "#050810" }}>{"<>"}</div>
           <span className="syne font-bold text-lg tracking-tight">CompileBox</span>
         </div>
-        <div className="hidden md:flex items-center gap-6 text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
-          {["Docs", "Languages", "Examples", "Blog"].map(l => (
-            <a key={l} href="#" className="hover:text-white transition-colors">{l}</a>
-          ))}
-        </div>
         <div className="flex gap-3">
           <Link to="/soloeditor" className="btn-primary px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200">Solo Editor</Link>
           <Link to="/join" className="btn-ghost px-4 py-2 rounded-lg text-sm font-bold transition-all duration-200 border" style={{ borderColor: "rgba(255,255,255,0.12)", color: "rgba(255,255,255,0.7)" }}>Collaborate</Link>
@@ -245,17 +240,6 @@ export default function LandingPage() {
 
 
 
-      {/* STATS STRIP */}
-      <section className="py-16 px-6 border-y" style={{ borderColor: "rgba(255,255,255,0.06)", background: "rgba(0,255,136,0.02)" }}>
-        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[["2.3M+", "Executions/day"], ["3", "Languages"], ["< 80ms", "Avg run time"], ["99.9%", "Uptime"]].map(([num, label]) => (
-            <div key={label}>
-              <div className="syne text-3xl font-extrabold mb-1" style={{ color: "#00ff88" }}>{num}</div>
-              <div className="text-xs font-mono" style={{ color: "rgba(255,255,255,0.35)" }}>{label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-28 px-6 text-center relative overflow-hidden">
